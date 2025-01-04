@@ -23,7 +23,6 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import coil3.compose.AsyncImage
 import home_page.composeapp.generated.resources.*
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.Font
@@ -81,10 +80,10 @@ fun HeaderSection() {
                 }
             }
             Spacer(modifier = Modifier.width(32.dp))
-            AsyncImage(
+            Image(
                 contentDescription = null,
                 modifier = Modifier.size(150.dp).clip(CircleShape),
-                model = "https://italord0.github.io/assets/me-56671ca0.png"
+                painter = painterResource(Res.drawable.me)
             )
         }
     }
