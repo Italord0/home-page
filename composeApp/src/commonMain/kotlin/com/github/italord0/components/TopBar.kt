@@ -42,5 +42,4 @@ fun TopBar(
         }
         Box(modifier = Modifier.fillMaxWidth().height(2.dp).background(Color.LightGray)) { }
     }
-
 }

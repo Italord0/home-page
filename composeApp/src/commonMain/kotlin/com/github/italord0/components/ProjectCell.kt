@@ -36,7 +36,7 @@ import org.jetbrains.compose.resources.painterResource
 @Composable
 fun ProjectCell(project: Project, onClick: (String) -> Unit) {
     Card(
-        modifier = Modifier.width(400.dp).height(500.dp).padding(32.dp),
+        modifier = Modifier.width(350.dp).height(450.dp),
         shape = RoundedCornerShape(60.dp),
         elevation = 15.dp
     ) {

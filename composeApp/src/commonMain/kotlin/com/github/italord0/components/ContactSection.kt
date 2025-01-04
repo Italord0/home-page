@@ -14,16 +14,12 @@ import androidx.compose.ui.input.pointer.pointerHoverIcon
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import home_page.composeapp.generated.resources.*
-import home_page.composeapp.generated.resources.Res
-import home_page.composeapp.generated.resources.spacemono_bold
-import home_page.composeapp.generated.resources.spacemono_regular
 import org.jetbrains.compose.resources.Font
 import org.jetbrains.compose.resources.painterResource
-import org.kodein.emoji.Emoji
-import org.kodein.emoji.activities.game.Heart
 
 @Composable
 fun ContactSection() {
@@ -96,7 +92,8 @@ fun ContactSection() {
             text = "Copyright © 2025. All rights are reserved.", style = TextStyle(
                 fontFamily = FontFamily(Font(Res.font.spacemono_regular)),
                 fontSize = 18.sp
-            )
+            ),
+            textAlign = TextAlign.Center
         )
     }
 }

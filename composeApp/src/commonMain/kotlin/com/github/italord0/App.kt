@@ -1,16 +1,16 @@
 package com.github.italord0
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavOptions
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.github.italord0.components.TopBar
+import com.github.italord0.screens.BlogScreen
 import com.github.italord0.screens.HomeScreen
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
@@ -31,7 +31,7 @@ fun App() {
             }
 
             composable(route = "Blog") {
-                Text(modifier = Modifier.clickable { navController.navigate("Home") }, text = "This is blog")
+                BlogScreen()
             }
         }
     }
