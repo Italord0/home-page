@@ -31,6 +31,13 @@ object Articles {
             description = "Learn how to build a realtime chat app using Jetpack Compose Multiplatform and Firebase Database.",
             link = "https://medium.com/@italord.melo/creating-a-realtime-chat-app-with-compose-multiplatform-and-firestore-e7afafc0be57",
             date = "Nov 21, 2024"
+        ),
+        Article(
+            image = Res.drawable.medium_compose_web,
+            title = "Compose Multiplatform for Web: My Experience so far",
+            description = "On this article, i will talk about the state of Compose Multiplatform for Web, and my experience building my new home page",
+            link = "https://medium.com/@italord.melo/compose-multiplatform-for-web-my-experience-so-far-5b6b354e02d0",
+            date = "Jan 6, 2025"
         )
     )
 }
